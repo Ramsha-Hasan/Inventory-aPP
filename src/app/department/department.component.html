@@ -1,0 +1,4 @@
+<div style="display:inline;" *ngFor="let x of product.department; let i=index">
+    <!--<a [style.display]='inline' href="#">{{x}}</a>-->
+    <span>{{x}} {{i < (product.department.length-1) ? '>' : ''}}</span>
+</div>
